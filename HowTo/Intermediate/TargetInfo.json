@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "HowTo",
+			"Path": "C:\\Users\\pople\\Desktop\\HowTo\\Source\\HowTo.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "HowToEditor",
+			"Path": "C:\\Users\\pople\\Desktop\\HowTo\\Source\\HowToEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
