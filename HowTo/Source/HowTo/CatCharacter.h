@@ -66,6 +66,8 @@ public:
 	// Interaface
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Interact")
 	void OnInteract();
+	UFUNCTION(BlueprintImplementableEvent, Category = "Rewards")
+		void OnReward();
 
 	//Actual implementation of the Interact
 	void OnInteract_Implementation();

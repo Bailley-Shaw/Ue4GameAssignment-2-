@@ -23,10 +23,11 @@ protected:
 	UPROPERTY(BlueprintReadOnly, Category = "Menu")
 	class UHowToGameInstance* GameInstance;
 
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Menu Events")
-	void OnShowMainMenu(bool NewGame);
+	
 
 public:
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Menu Events")
+		void OnShowMainMenu(bool NewGame);
 
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Menu Events")
 	void OnNewGame(FName MapNameToLoad);

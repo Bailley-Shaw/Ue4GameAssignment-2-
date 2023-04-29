@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\pople\\Desktop\\HowTo\\Source\\HowTo\\HowTo.Build.cs",
-		"C:\\Users\\pople\\Desktop\\HowTo\\Source\\HowTo.Target.cs",
-		"C:\\Users\\pople\\Desktop\\HowTo\\Source\\HowToEditor.Target.cs"
+		"E:\\__GitHubRepos\\Ue4GameAssignment-2-\\HowTo\\Source\\HowTo\\HowTo.Build.cs",
+		"E:\\__GitHubRepos\\Ue4GameAssignment-2-\\HowTo\\Source\\HowTo.Target.cs",
+		"E:\\__GitHubRepos\\Ue4GameAssignment-2-\\HowTo\\Source\\HowToEditor.Target.cs"
 	],
 	"EngineVersion": "4.27.2"
 }

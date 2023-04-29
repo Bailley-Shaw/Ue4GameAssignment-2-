@@ -143,7 +143,7 @@ void ACatCharacter::OnInteract_Implementation()
 
 				PlayerCharacter->OnShowQuestCompleted(Quest.CompleteMessage);
 				QuestActivated = false;
-
+				OnReward();
 			}
 			else
 			{
@@ -156,6 +156,3 @@ void ACatCharacter::OnInteract_Implementation()
 		}
 	}	
 }
-
-
-

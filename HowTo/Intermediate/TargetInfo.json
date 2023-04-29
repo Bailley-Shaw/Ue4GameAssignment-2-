@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "HowTo",
-			"Path": "C:\\Users\\pople\\Desktop\\HowTo\\Source\\HowTo.Target.cs",
+			"Path": "E:\\__GitHubRepos\\Ue4GameAssignment-2-\\HowTo\\Source\\HowTo.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "HowToEditor",
-			"Path": "C:\\Users\\pople\\Desktop\\HowTo\\Source\\HowToEditor.Target.cs",
+			"Path": "E:\\__GitHubRepos\\Ue4GameAssignment-2-\\HowTo\\Source\\HowToEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

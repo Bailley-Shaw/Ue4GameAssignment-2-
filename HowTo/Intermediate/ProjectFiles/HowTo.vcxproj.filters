@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\HowTo.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{D692275B-780C-4B89-880E-9C443DC6E2A1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\HowTo.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\HowToEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{76615C23-4A3E-4CDC-B2B2-DDD7D13ADFA7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\HowTo">
+      <UniqueIdentifier>{4CEE02D9-CA9D-4825-99D9-C1521CA8583D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\HowTo\AEnemy.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\AEnemy.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\BasicInteractive.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\BasicInteractive.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\CatCharacter.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\CatCharacter.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\Checkpoint.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\Checkpoint.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\Chest.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\Chest.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\ComplexAnimInstance.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\ComplexAnimInstance.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\Definitions.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\Definitions.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\HowTo\HowTo.Build.cs">
+      <Filter>Source\HowTo</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\HowTo\HowTo.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\HowTo.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\HowToCharacter.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\HowToCharacter.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\HowToGameInstance.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\HowToGameInstance.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\HowToGameMode.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\HowToGameMode.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\Interactable.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\Interactable.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\ItemInteractive.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\ItemInteractive.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\MainMenuGameMode.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\MainMenuGameMode.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\MainPlayerController.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\MainPlayerController.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\PushInteractive.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\PushInteractive.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\HowTo\ShopCharacter.cpp">
+      <Filter>Source\HowTo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\HowTo\ShopCharacter.h">
+      <Filter>Source\HowTo</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

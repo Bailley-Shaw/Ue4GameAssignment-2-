@@ -51,12 +51,10 @@ AHowToCharacter::AHowToCharacter()
 	CarryItemPoint = CreateDefaultSubobject<USceneComponent>(TEXT("CarryItemPoint"));
 	CarryItemPoint->SetupAttachment(RootComponent);
 
-	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
-	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+	RocketPoint = CreateDefaultSubobject<USceneComponent>(TEXT("RocketPoint"));
+	RocketPoint->SetupAttachment(RootComponent);
 }
 
-//////////////////////////////////////////////////////////////////////////
-// Input
 
 void AHowToCharacter::BeginPlay()
 {
@@ -98,9 +96,6 @@ void AHowToCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAxis("MoveForward", this, &AHowToCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AHowToCharacter::MoveRight);
 
-	// We have 2 versions of the rotation bindings to handle different kinds of devices differently
-	// "turn" handles devices that provide an absolute delta, such as a mouse.
-	// "turnrate" is for devices that we choose to treat as a rate of change, such as an analog joystick
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("TurnRate", this, &AHowToCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
@@ -508,5 +503,3 @@ void AHowToCharacter::FreeHands()
 	Animator->SetAlphaRightArm(false);
 	Animator->SetAlphaLeftArm(false);
 }
-
-//// Inventory ///////
