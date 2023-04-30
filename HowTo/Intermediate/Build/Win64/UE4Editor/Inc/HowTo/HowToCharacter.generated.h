@@ -16,8 +16,8 @@ struct FQuest;
 #endif
 #define HOWTO_HowToCharacter_generated_h
 
-#define HowTo_Source_HowTo_HowToCharacter_h_14_SPARSE_DATA
-#define HowTo_Source_HowTo_HowToCharacter_h_14_RPC_WRAPPERS \
+#define HowTo_Source_HowTo_HowToCharacter_h_15_SPARSE_DATA
+#define HowTo_Source_HowTo_HowToCharacter_h_15_RPC_WRAPPERS \
 	virtual void TriggerCheckPoint_Implementation(); \
  \
 	DECLARE_FUNCTION(execTriggerCheckPoint); \
@@ -29,7 +29,7 @@ struct FQuest;
 	DECLARE_FUNCTION(execAddItem);
 
 
-#define HowTo_Source_HowTo_HowToCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define HowTo_Source_HowTo_HowToCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execTriggerCheckPoint); \
 	DECLARE_FUNCTION(execGetItemInInventory); \
@@ -40,7 +40,7 @@ struct FQuest;
 	DECLARE_FUNCTION(execAddItem);
 
 
-#define HowTo_Source_HowTo_HowToCharacter_h_14_EVENT_PARMS \
+#define HowTo_Source_HowTo_HowToCharacter_h_15_EVENT_PARMS \
 	struct HowToCharacter_eventOnShowQuestCompleted_Parms \
 	{ \
 		FText Message; \
@@ -63,8 +63,8 @@ struct FQuest;
 	};
 
 
-#define HowTo_Source_HowTo_HowToCharacter_h_14_CALLBACK_WRAPPERS
-#define HowTo_Source_HowTo_HowToCharacter_h_14_INCLASS_NO_PURE_DECLS \
+#define HowTo_Source_HowTo_HowToCharacter_h_15_CALLBACK_WRAPPERS
+#define HowTo_Source_HowTo_HowToCharacter_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAHowToCharacter(); \
 	friend struct Z_Construct_UClass_AHowToCharacter_Statics; \
@@ -73,7 +73,7 @@ public: \
 	DECLARE_SERIALIZER(AHowToCharacter)
 
 
-#define HowTo_Source_HowTo_HowToCharacter_h_14_INCLASS \
+#define HowTo_Source_HowTo_HowToCharacter_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAHowToCharacter(); \
 	friend struct Z_Construct_UClass_AHowToCharacter_Statics; \
@@ -82,7 +82,7 @@ public: \
 	DECLARE_SERIALIZER(AHowToCharacter)
 
 
-#define HowTo_Source_HowTo_HowToCharacter_h_14_STANDARD_CONSTRUCTORS \
+#define HowTo_Source_HowTo_HowToCharacter_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AHowToCharacter(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AHowToCharacter) \
@@ -95,7 +95,7 @@ private: \
 public:
 
 
-#define HowTo_Source_HowTo_HowToCharacter_h_14_ENHANCED_CONSTRUCTORS \
+#define HowTo_Source_HowTo_HowToCharacter_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AHowToCharacter(AHowToCharacter&&); \
@@ -106,7 +106,7 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AHowToCharacter)
 
 
-#define HowTo_Source_HowTo_HowToCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
+#define HowTo_Source_HowTo_HowToCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(AHowToCharacter, CameraBoom); } \
 	FORCEINLINE static uint32 __PPO__FollowCamera() { return STRUCT_OFFSET(AHowToCharacter, FollowCamera); } \
 	FORCEINLINE static uint32 __PPO__CarryItemPoint() { return STRUCT_OFFSET(AHowToCharacter, CarryItemPoint); } \
@@ -119,32 +119,32 @@ public: \
 	FORCEINLINE static uint32 __PPO__ItemIDOnHands() { return STRUCT_OFFSET(AHowToCharacter, ItemIDOnHands); }
 
 
-#define HowTo_Source_HowTo_HowToCharacter_h_11_PROLOG \
-	HowTo_Source_HowTo_HowToCharacter_h_14_EVENT_PARMS
+#define HowTo_Source_HowTo_HowToCharacter_h_12_PROLOG \
+	HowTo_Source_HowTo_HowToCharacter_h_15_EVENT_PARMS
 
 
-#define HowTo_Source_HowTo_HowToCharacter_h_14_GENERATED_BODY_LEGACY \
+#define HowTo_Source_HowTo_HowToCharacter_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HowTo_Source_HowTo_HowToCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
-	HowTo_Source_HowTo_HowToCharacter_h_14_SPARSE_DATA \
-	HowTo_Source_HowTo_HowToCharacter_h_14_RPC_WRAPPERS \
-	HowTo_Source_HowTo_HowToCharacter_h_14_CALLBACK_WRAPPERS \
-	HowTo_Source_HowTo_HowToCharacter_h_14_INCLASS \
-	HowTo_Source_HowTo_HowToCharacter_h_14_STANDARD_CONSTRUCTORS \
+	HowTo_Source_HowTo_HowToCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
+	HowTo_Source_HowTo_HowToCharacter_h_15_SPARSE_DATA \
+	HowTo_Source_HowTo_HowToCharacter_h_15_RPC_WRAPPERS \
+	HowTo_Source_HowTo_HowToCharacter_h_15_CALLBACK_WRAPPERS \
+	HowTo_Source_HowTo_HowToCharacter_h_15_INCLASS \
+	HowTo_Source_HowTo_HowToCharacter_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define HowTo_Source_HowTo_HowToCharacter_h_14_GENERATED_BODY \
+#define HowTo_Source_HowTo_HowToCharacter_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	HowTo_Source_HowTo_HowToCharacter_h_14_PRIVATE_PROPERTY_OFFSET \
-	HowTo_Source_HowTo_HowToCharacter_h_14_SPARSE_DATA \
-	HowTo_Source_HowTo_HowToCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	HowTo_Source_HowTo_HowToCharacter_h_14_CALLBACK_WRAPPERS \
-	HowTo_Source_HowTo_HowToCharacter_h_14_INCLASS_NO_PURE_DECLS \
-	HowTo_Source_HowTo_HowToCharacter_h_14_ENHANCED_CONSTRUCTORS \
+	HowTo_Source_HowTo_HowToCharacter_h_15_PRIVATE_PROPERTY_OFFSET \
+	HowTo_Source_HowTo_HowToCharacter_h_15_SPARSE_DATA \
+	HowTo_Source_HowTo_HowToCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	HowTo_Source_HowTo_HowToCharacter_h_15_CALLBACK_WRAPPERS \
+	HowTo_Source_HowTo_HowToCharacter_h_15_INCLASS_NO_PURE_DECLS \
+	HowTo_Source_HowTo_HowToCharacter_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

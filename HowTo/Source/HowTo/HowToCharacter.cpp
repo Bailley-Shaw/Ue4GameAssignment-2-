@@ -13,39 +13,33 @@
 #include "HowToGameInstance.h"
 #include "Kismet/GameplayStatics.h"
 
-//////////////////////////////////////////////////////////////////////////
-// AHowToCharacter
 
 AHowToCharacter::AHowToCharacter()
 {
-	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 
-	// set our turn rates for input
 	BaseTurnRate = 45.f;
 	BaseLookUpRate = 45.f;
 
-	// Don't rotate when the controller rotates. Let that just affect the camera.
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
 
 	// Configure character movement
-	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...	
-	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f); // ...at this rotation rate
+	GetCharacterMovement()->bOrientRotationToMovement = true;
+	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f);
 	GetCharacterMovement()->JumpZVelocity = 600.f;
 	GetCharacterMovement()->AirControl = 0.2f;
 
-	// Create a camera boom (pulls in towards the player if there is a collision)
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
-	CameraBoom->TargetArmLength = 300.0f; // The camera follows at this distance behind the character	
-	CameraBoom->bUsePawnControlRotation = true; // Rotate the arm based on the controller
+	CameraBoom->TargetArmLength = 300.0f; 
+	CameraBoom->bUsePawnControlRotation = true;
 
 	// Create a follow camera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
-	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
-	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
+	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
+	FollowCamera->bUsePawnControlRotation = false;
 
 
 	CarryItemPoint = CreateDefaultSubobject<USceneComponent>(TEXT("CarryItemPoint"));
@@ -100,6 +94,7 @@ void AHowToCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 	PlayerInputComponent->BindAxis("TurnRate", this, &AHowToCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AHowToCharacter::LookUpAtRate);
+	PlayerInputComponent->BindAction("Shoot", IE_Pressed, this, &AHowToCharacter::Shoot);
 
 }
 
@@ -502,4 +497,49 @@ void AHowToCharacter::FreeHands()
 
 	Animator->SetAlphaRightArm(false);
 	Animator->SetAlphaLeftArm(false);
+}
+void AHowToCharacter::Shoot()
+{
+	if (AmmoCount <= 0) {
+		UE_LOG(LogTemp, Warning, TEXT("No ammo left"));
+		return;
+	}
+
+	if (ProjectileClass == nullptr) {
+		UE_LOG(LogTemp, Warning, TEXT("Projectile class not set"));
+		return;
+	}
+
+	// spawn projectile at RocketPoint location and rotation
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.Owner = this;
+	SpawnParams.Instigator = this;
+	SpawnParams.bNoFail = true;
+	SpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
+	FVector SpawnLocation = RocketPoint->GetComponentLocation();
+	FRotator SpawnRotation = RocketPoint->GetComponentRotation();
+	AMissile* Missile = GetWorld()->SpawnActor<AMissile>(ProjectileClass, SpawnLocation, SpawnRotation, SpawnParams);
+
+	// Ignore the spawner character
+	if (Missile != nullptr) {
+		UE_LOG(LogTemp, Warning, TEXT("Projectile spawned"));
+		UPrimitiveComponent* MissileCollisionComponent = Missile->FindComponentByClass<UPrimitiveComponent>();
+		if (MissileCollisionComponent != nullptr) {
+			MissileCollisionComponent->IgnoreActorWhenMoving(this, true);
+		}
+		AmmoCount--;
+	}
+
+
+	// Set timer to regenerate ammo after 2 seconds
+	const float AmmoRegenerationDelay = 2.0f;
+	GetWorldTimerManager().SetTimer(AmmoRegenerationTimerHandle, this, &AHowToCharacter::RegenerateAmmo, AmmoRegenerationDelay, false);
+}
+
+void AHowToCharacter::RegenerateAmmo()
+{
+	if (AmmoCount < MaxAmmoCount) {
+		AmmoCount++;
+		UE_LOG(LogTemp, Warning, TEXT("Ammo regenerated. Current ammo: %d"), AmmoCount);
+	}
 }

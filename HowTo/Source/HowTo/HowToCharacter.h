@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Interactable.h"
+#include "Missile.h"
 #include "Definitions.h"
 #include "HowToCharacter.generated.h"
 
@@ -125,6 +126,10 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnRefreshInventory();
 
+	void Shoot();
+	void RegenerateAmmo();
+
+
 public:
 
 	void SwitchItem();
@@ -172,6 +177,13 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
 	void OnSpawnItem(TSubclassOf<class AActor> ItemToGrab);
 
+	UPROPERTY(EditDefaultsOnly, Category = "Projectile")
+		TSubclassOf<class AActor> ProjectileClass;
+
+	int32 MaxAmmoCount = 5;
+	int32 AmmoCount = MaxAmmoCount;
+
+	FTimerHandle AmmoRegenerationTimerHandle;
 
 public:
 

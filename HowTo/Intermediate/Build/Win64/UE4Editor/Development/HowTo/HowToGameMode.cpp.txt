@@ -16,6 +16,8 @@ C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Source\HowTo\Interactable.h
 E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Intermediate\Build\Win64\UE4Editor\Inc\HowTo\Interactable.generated.h
+E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Source\HowTo\Missile.h
+E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Intermediate\Build\Win64\UE4Editor\Inc\HowTo\Missile.generated.h
 E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Intermediate\Build\Win64\UE4Editor\Inc\HowTo\HowToCharacter.generated.h
 E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Source\HowTo\HowToGameInstance.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/SaveGame.h

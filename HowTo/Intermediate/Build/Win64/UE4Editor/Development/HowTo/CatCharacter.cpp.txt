@@ -28,4 +28,6 @@ E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Source\HowTo\Definitions.h
 E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Intermediate\Build\Win64\UE4Editor\Inc\HowTo\Definitions.generated.h
 E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Intermediate\Build\Win64\UE4Editor\Inc\HowTo\HowToGameMode.generated.h
 E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Source\HowTo\HowToCharacter.h
+E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Source\HowTo\Missile.h
+E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Intermediate\Build\Win64\UE4Editor\Inc\HowTo\Missile.generated.h
 E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Intermediate\Build\Win64\UE4Editor\Inc\HowTo\HowToCharacter.generated.h

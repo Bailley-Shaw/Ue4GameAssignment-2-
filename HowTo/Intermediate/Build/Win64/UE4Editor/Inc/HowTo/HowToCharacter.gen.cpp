@@ -654,6 +654,10 @@ void EmptyLinkFunctionForGeneratedCodeHowToCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ItemIDOnHands_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FNamePropertyParams NewProp_ItemIDOnHands;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ProjectileClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ProjectileClass;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -786,6 +790,13 @@ void EmptyLinkFunctionForGeneratedCodeHowToCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FNamePropertyParams Z_Construct_UClass_AHowToCharacter_Statics::NewProp_ItemIDOnHands = { "ItemIDOnHands", nullptr, (EPropertyFlags)0x0020080000000005, UE4CodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHowToCharacter, ItemIDOnHands), METADATA_PARAMS(Z_Construct_UClass_AHowToCharacter_Statics::NewProp_ItemIDOnHands_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHowToCharacter_Statics::NewProp_ItemIDOnHands_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHowToCharacter_Statics::NewProp_ProjectileClass_MetaData[] = {
+		{ "Category", "Projectile" },
+		{ "ModuleRelativePath", "HowToCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AHowToCharacter_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHowToCharacter, ProjectileClass), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AHowToCharacter_Statics::NewProp_ProjectileClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHowToCharacter_Statics::NewProp_ProjectileClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AHowToCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHowToCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHowToCharacter_Statics::NewProp_FollowCamera,
@@ -800,6 +811,7 @@ void EmptyLinkFunctionForGeneratedCodeHowToCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHowToCharacter_Statics::NewProp_bHasItemOnHands,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHowToCharacter_Statics::NewProp_IndexItemOnHands,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHowToCharacter_Statics::NewProp_ItemIDOnHands,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHowToCharacter_Statics::NewProp_ProjectileClass,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AHowToCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AHowToCharacter>::IsAbstract,
@@ -828,7 +840,7 @@ void EmptyLinkFunctionForGeneratedCodeHowToCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHowToCharacter, 1737886233);
+	IMPLEMENT_CLASS(AHowToCharacter, 4204733963);
 	template<> HOWTO_API UClass* StaticClass<AHowToCharacter>()
 	{
 		return AHowToCharacter::StaticClass();

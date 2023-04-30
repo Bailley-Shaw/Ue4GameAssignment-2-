@@ -19,6 +19,7 @@ void AAEnemy::BeginPlay()
     // Set the enemy's initial patrol location to its starting location
     InitialLocation = GetActorLocation();
     CurrentPatrolLocation = InitialLocation;
+    CurrentHealth = MaxHealth;
 }
 
 void AAEnemy::Tick(float DeltaTime)
