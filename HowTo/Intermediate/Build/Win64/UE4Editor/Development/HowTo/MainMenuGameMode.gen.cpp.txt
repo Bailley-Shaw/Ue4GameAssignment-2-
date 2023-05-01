@@ -1,9 +1,0 @@
-E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Intermediate\Build\Win64\UE4Editor\Development\HowTo\Definitions.HowTo.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Source\HowTo/MainMenuGameMode.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Intermediate\Build\Win64\UE4Editor\Inc\HowTo\MainMenuGameMode.generated.h

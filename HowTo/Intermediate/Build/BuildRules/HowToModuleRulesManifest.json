@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"E:\\__GitHubRepos\\Ue4GameAssignment-2-\\HowTo\\Source\\HowTo\\HowTo.Build.cs",
-		"E:\\__GitHubRepos\\Ue4GameAssignment-2-\\HowTo\\Source\\HowTo.Target.cs",
-		"E:\\__GitHubRepos\\Ue4GameAssignment-2-\\HowTo\\Source\\HowToEditor.Target.cs"
-	],
-	"EngineVersion": "4.27.2"
-}

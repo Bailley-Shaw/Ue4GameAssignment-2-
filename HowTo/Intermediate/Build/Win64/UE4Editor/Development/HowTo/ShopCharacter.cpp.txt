@@ -1,9 +1,0 @@
-E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Intermediate\Build\Win64\UE4Editor\Development\HowTo\Definitions.HowTo.h
-E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Source\HowTo\ShopCharacter.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-E:\__GitHubRepos\Ue4GameAssignment-2-\HowTo\Intermediate\Build\Win64\UE4Editor\Inc\HowTo\ShopCharacter.generated.h
