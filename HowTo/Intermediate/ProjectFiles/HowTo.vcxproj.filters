@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\HowTo.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{21316AFB-ACBD-4A7E-9A02-A2FBFEDC7A73}</UniqueIdentifier>
+      <UniqueIdentifier>{D260E423-0C41-4C51-BCA8-A248220D1F74}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\HowTo.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{A0BA676C-0134-4B8F-95D1-DF4EE585D44F}</UniqueIdentifier>
+      <UniqueIdentifier>{2896D65E-FA2E-4CB1-A3F0-495FA49CDB89}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\HowTo">
-      <UniqueIdentifier>{43549E2F-F0FC-4570-B447-AD764A964C95}</UniqueIdentifier>
+      <UniqueIdentifier>{EDD6E2D5-2BA6-45CD-B7EF-23BE3C11BE3E}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\HowTo\AEnemy.cpp">
       <Filter>Source\HowTo</Filter>
